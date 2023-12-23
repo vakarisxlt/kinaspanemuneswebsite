@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>K.I.N.A.S. „Panemunė“</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonas -->
+<style>
+	body {
+		background-color: rgb(0, 42, 0);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+</style>
+<!-- virsutine lentelia -->
+
+<body>
+	<nav>
+		<ul>
+			<li><a style="font-size:20px;" href="index.html">Pagrindinis</a></li>
+			<li><a style="font-size:20px;" href="renginiai.html">Renginiai</a></li>
+			<li><a style="font-size:20px;" href="musuprekes.html">Mūsų erdvės</a></li>
+			<li><a style="font-size:20px;" href="aprašymas.html">Apie mus</a></li>
+			<li><a style="font-size:20px;" href="tvarumodeklaracija.html">Tvarumo deklaracija</a></li>
+			<li><a style="font-size:20px;" href="kontaktai.html">Kontaktai</a></li>
+		</ul>
+	</nav>
+	<section>
+	</section>
+</body>
+
+<!-- pagrindinis paveiksliukas -->
+
+<figure>
+	<style>
+		div {
+			display: flex;
+			justify-content: center;
+		}
+
+		img {
+			margin-top: 20px;
+		}
+
+		.image-container {
+			position: relative;
+		}
+
+		.overlay-image {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			width: 200px;
+			/* Keiskite pagal savo poreikius */
+			height: auto;
+		}
+	</style>
+	<div>
+		<img src="/img/kinaspanemunes virselis (3).png" height="500" width="1500">
+		<h2 id="C5"></h2>
+	</div>
+</figure>,
+
+
+
+<!-- Renginiai -->
+<style>
+	.modal {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		justify-content: center;
+		align-items: center;
+	}
+
+	.modal-content {
+		background-color: #ffffff;
+		padding: 20px;
+		max-width: 80%;
+		max-height: 80%;
+		overflow: auto;
+	}
+
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		font-size: 100px;
+		color: #ff0000;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	}
+
+	.image-container {
+		position: relative;
+		text-align: center;
+	}
+
+	.overlay-image {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.overlay-image img {
+		width: 100%;
+		height: 100%;
+	}
+</style>
+</head>
+
+<body>
+	<figure style="background-color: rgb(147, 173, 0); padding: 20px; cursor: pointer;" onclick="openModal()">
+		<figcaption>
+			<h1 style="text-align:center;">Filmo peržiūra "Andrius"</h1>
+		</figcaption>
+	</figure>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h1 style="text-align:center;">APIE FILMĄ
+				🎬 Režisavo: Algirdas Araminas
+				🎬 Metai: 1980
+				🎬 Vaidina: Edvinas Menčikovas, Inga Brunzaitė, Donatas Banionis, Irena Marija Leonavičiūtė, Indra
+				Andrašiūnaitė, Gediminas Karka, Laima Štrimaitytė, Andrius Šiuša.
+				🎬 Filmo aprašymas: 1981 – Antroji premija XIV sąjunginiame filmų vaikams ir jaunimui festivalyje
+				Vilniuje.
+				1982 – Specialus žiūri prizas „Aukso medalis” XII tarptautiniame vaiku ir jaunimo filmų festivalyje
+				Italijoje.
+				Dešimties metų Andrius - ne toks kaip visi vaikai. Tyros ir patiklios širdies berniukas dažnai randa
+				prieglobstį svajonių pasaulyje, kur nežinomos žemės, kur auksinės Prahos laikrodininkas, pasipuošęs
+				poros šimtmečių senumo rūbais, kviečia vaikus pasivaišinti kava iš puošnaus servizo, o senukas
+				Rukšėnas, skraidantis savo paties sukonstruotu sklandytuvu, kviečia vaikus į fantastinį miestą
+				ieškoti ypatingos peteliškės, stingančios jo kolekcijai. Po paslaptingų žodžių „bitė-ritė-baltaragė“
+				Andrius, muzikos mokyklos mokinys, iškart pakliūdavo į svajonių pasaulį, kuriame nebuvo jokių
+				problemų. Į Vilnių gastrolių atvažiuoja Prahos vaikų choras, Andriaus viešnia tampa mergaitė Jana.
+				Vaikai susidraugauja. Vaikai kalba skirtingomis kalbomis, tačiau puikiausiai supranta vienas kitą.
+				Andrius padovanoja Janai stebuklingus žodžius. Janai išvykus, Andriui lieka tik svajingas jos
+				prisiminimas, ilgesys, išsiliejantis fleitos melodija...
+			</h1>
+		</div>
+	</div>
+
+
+	<script>
+		function openModal() {
+			document.getElementById('myModal').style.display = 'flex';
+		}
+
+		function closeModal() {
+			document.getElementById('myModal').style.display = 'none';
+		}
+	</script>
+</body>
+
+
+
+</html>
